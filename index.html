@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./custom.css">
+</head>
+<body>
+ 
+  <header style="display:flex; justify-content: center; align-items:center">
+     <h2 style="transform: scale(2.5,4); color:green">App </h2><img src="logo.jpg" style="height:200px">
+      
+      
+  </header>
+ 
+  <div class="container mt-5">
+      
+      <div class="row">
+          
+          <div class="col-sm-8">
+          
+      
+       <h1></h1>
+   <form action="javascript:void(0)">
+      <div class="form-group">
+          <label for="product">Product</label>
+       <input type="text" id="product" class="form-control" required>
+          
+      </div>
+       
+       <div class="form-group">
+        <label for="filter">Filter</label>
+       <input type="text" id="filter" class="form-control" required>
+           
+       </div>
+       
+        <div class="form-group">
+    <label for="pageSelect">Select Pages number</label>
+    <small class="form-text text-muted">Each page has up to 40 reviews</small>
+    <select class="form-control" id="pageSelect" required>
+      <option value="10">10</option>
+      <option value="30">30</option>
+      <option value="50">50</option>
+      <option value="100">100</option>
+    </select>
+  </div>
+       
+       <button class="btn btn-primary btn-block" onclick="showSearching()">Submit</button>
+       
+   </form>
+<!--
+    <hr>
+    
+     <form action="javascript:void(0)">
+      <div class="form-group">
+          <label for="product">Category</label>
+       <input type="text" id="category" class="form-control">
+          
+      </div>
+    
+       <button class="btn btn-primary">Search</button>
+       
+   </form>
+   <hr>
+   
+
+   <br>
+   
+   
+   <p id="appId" class="bg-warning">AppIds shown below</p>
+   
+-->
+   
+   <hr>
+   
+   <p id="one" class="bg-success" style="padding:10px;">Reviews shown below</p>
+   <div id="chart"></div>
+    </div>
+     
+      <div class="col-sm-4">
+      <button class="btn btn-primary btn-block mb-2" id="table_info">Get table info</button>
+      <p id="tableList" class="bg bg-warning" style="padding:10px;">Tables  will be shown below</p>
+      <p id="dbInfo" class="bg-success" style="padding:10px;">result shown below-----<span id="tableName"></span></p>
+      </div>
+      
+  </div>
+  
+  </div> 
+  
+  
+   
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+    
+    
+</body>
+<footer>
+    Powered by Team01 &copy;2019
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="websocket-client.js"></script>
+</html>

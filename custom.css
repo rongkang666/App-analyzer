@@ -1,0 +1,19 @@
+body{
+    margin: 10px;
+    background-color: floralwhite;
+    height: 95vh;
+}
+
+.spinner-2{
+    animation-delay: .2s;
+}
+
+.spinner-3{
+    animation-delay: .5s;
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 250px;
+}
